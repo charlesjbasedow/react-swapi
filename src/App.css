@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.starships-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+.starships-div{
+  display: grid;
+}
