@@ -12,15 +12,20 @@ const StarshipList = (props) => {
 
   return (
     <>
-      <div className="starships-container">
+    <div>
+      <div className='starships-container'>
         {starshipList.map((starship) => (
-        <Link
+        <div key={starship.name}>
+        <Link className="App-link"
           to='/starship'
-          state={{starship}}
-          key={starship.name}>
+          state={{starship}}>
+          <div className="starships-div">
+            {starship.name}
+          </div>  
         </Link>
-
-        ))}
+        </div>
+    ))}
+      </div>
       </div>
     </>
     );

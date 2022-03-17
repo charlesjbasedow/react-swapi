@@ -14,10 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: #383b41;
+  min-height: 5vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -25,7 +25,12 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color:white;
+  text-decoration: none;
+}
+
+.Return-link {
+  color: white;
 }
 
 @keyframes App-logo-spin {
@@ -37,14 +42,43 @@
   }
 }
 
-.starships-container{
+.starships-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  width: clamp(300px, 80vw, 1400px);
+  margin:auto;
   justify-content: center;
-  margin: auto;
+  margin-top: 3%;
 }
 
-.starships-div{
+.starships-div, .starship-details-div {
+  border: 1px solid #266666;
+  border-radius: 5px;
+  background-color: #266666;
+  margin: 1rem;
+  color: white;
+  width: 260px;
+  height: 100px;
   display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
 }
+
+.starship-details-container {
+  display: grid;
+  justify-content: center;
+  margin-top: 15%;
+}
+
+.starship-details-div {
+  height: 100px;
+  width: 390px;
+  justify-content: left;
+  line-height: 2.5;
+  padding: 0px 0px 40px 15px
+}
+
+
+
